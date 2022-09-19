@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="farhanmart.list">
+      <field name="name">farhanmart list</field>
+      <field name="model">farhanmart.farhanmart</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="farhanmart.action_window">
+      <field name="name">farhanmart window</field>
+      <field name="res_model">farhanmart.farhanmart</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="farhanmart.action_server">
+      <field name="name">farhanmart server</field>
+      <field name="model_id" ref="model_farhanmart_farhanmart"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="farhanmart" id="farhanmart.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="farhanmart.menu_1" parent="farhanmart.menu_root"/>
+    <menuitem name="Menu 2" id="farhanmart.menu_2" parent="farhanmart.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="farhanmart.menu_1_list" parent="farhanmart.menu_1"
+              action="farhanmart.action_window"/>
+    <menuitem name="Server to list" id="farhanmart" parent="farhanmart.menu_2"
+              action="farhanmart.action_server"/>
+-->
+  </data>
+</odoo>

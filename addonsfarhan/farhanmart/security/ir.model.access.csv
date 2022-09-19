@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_farhanmart_kelompokbarang,access.farhanmart.kelompokbarang,model_farhanmart_kelompokbarang,,1,1,1,1
+access_farhanmart_barang,access.farhanmart.barang,model_farhanmart_barang,,1,1,1,1
+access_farhanmart_person,access.farhanmart.person,model_farhanmart_person,,1,1,1,1
+access_farhanmart_kasir,access.farhanmart.kasir,model_farhanmart_kasir,,1,1,1,1
+access_farhanmart_cleaningservice,access.farhanmart.cleaningservice,model_farhanmart_cleaningservice,,1,1,1,1
+access_farhanmart_supplier,access.farhanmart.supplier,model_farhanmart_supplier,,1,1,1,1
+access_farhanmart_penjualan,access.farhanmart.penjualan,model_farhanmart_penjualan,,1,1,1,1
+access_farhanmart_detailpenjualan,access.farhanmart.detailpenjualan,model_farhanmart_detailpenjualan,,1,1,1,1
+access_farhanmart_barangdatang,access.farhanmart.barangdatang,model_farhanmart_barangdatang,,1,1,1,1
+access_farhanmart_addsupplier,access.farhanmart.addsupplier,model_farhanmart_addsupplier,,1,1,1,1
+access_farhanmart_penjualanreport,access.farhanmart.penjualanreport,model_farhanmart_penjualanreport,,1,1,1,1

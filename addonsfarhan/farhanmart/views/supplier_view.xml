@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- farhanmart.supplier tree view -->
+    <record id="farhanmart_supplier_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Supplier</field>
+        <field name="model">farhanmart.supplier</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="alamat"/>
+                <field name="no_telp"/>
+                <field name="barang_id"/>
+                
+            </tree>
+        </field>
+    </record>
+
+        <!-- farhanmart.supplier form view -->
+        <record id="farhanmart_supplier_view_form" model="ir.ui.view">
+            <field name="name">Form Supplier</field>
+            <field name="model">farhanmart.supplier</field>
+            <field name="arch" type="xml">
+                <form string="">
+                <header>
+                    <button name="%(farhanmart.farhanmart_addsupplier_wizzard_action)d" type="action" string="Input Supplier" class="btn btn-warning"/>
+                </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="alamat"/>
+                            <field name="no_telp"/>
+                        </group>
+                        <group name="barang" string="Barang">
+                            <field name="barang_id"/>                          
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    <!-- farhanmart.supplier action window -->
+    <record id="farhanmart_supplier_action" model="ir.actions.act_window">
+        <field name="name">Daftar Supplier</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">farhanmart.supplier</field>
+        <field name="view_mode">tree,form</field>
+      
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="farhanmart_supplier_menu_act" 
+              name="Supplier"   
+              parent="farhanmart_menu_root" 
+              action="farhanmart_supplier_action" 
+              sequence="40"/>
+
+</odoo>
